@@ -39,7 +39,7 @@
 
 ## Live link
 
-- [Music Player]()
+- [Music Player](https://js-assig-project-music-player.netlify.app/)
 
 ---
 
