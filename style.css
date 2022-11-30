@@ -1,0 +1,143 @@
+*{
+    border: 0;
+    margin: 0;
+    outline: 0; 
+}
+
+body{
+    border: 0;
+    margin: 1rem;
+    outline: 0; 
+    font-family: 'Roboto', sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.musicPlayer{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+.wrapper{
+    border: 0.1rem solid  transparent;
+    background-color: #2ecc71;
+    padding: 2rem;
+    border-radius: 1.25rem;
+    box-shadow: 0rem 0.05rem 1rem 0.02rem #000000;
+}
+
+.musicDetails{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.0rem;
+}
+
+.trackPic{
+   
+    margin: 1.5rem;
+    height: 10rem;
+    width: 10rem;
+    border-radius: 0.3rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0rem 0.15rem 0.5rem  #000000;
+}
+
+.trackName{
+    margin-top: 2rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+.artistName{
+    font-family: 'Roboto', sans-serif;
+    margin-top: 0.2rem;
+    font-weight: 400;
+    
+}
+
+.sliders{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5rem;
+
+}
+
+.timeSlider{
+    background-color: inherit;
+    appearance: none;
+    height: 0.35rem;
+    background:#050505 ;
+    transition:.2s;
+    width: 15rem;
+    margin: 0.3rem;
+    border-radius: 0.4rem;
+}
+
+.volumeSlider{
+    background-color: inherit;
+    appearance: none;
+    height: 0.35rem;
+    background:#050505 ;
+    border-radius: 0.4rem;
+    margin: 0.3rem;
+    transition:   .2s ;
+    width: 8rem;
+}
+
+.sliders:nth-child(3){
+    opacity: 0.2;
+    transform: translate(-170px, -170px) rotate(270deg);
+}
+
+.sliders:nth-child(3):hover{
+    opacity: 1;
+    transition:.5s ;
+}
+
+
+
+.timeSlider::-webkit-slider-thumb,.volumeSlider::-webkit-slider-thumb{
+    appearance: none;
+    width: 0.9rem;
+    height: 0.9rem;
+    background: #303952;
+    border: 0.15rem solid #079992;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    column-gap: 1.5rem;
+}
+
+.randomTrack,.previousTrack,.playPauseBtn,.nextTrack,.repeatTrack{
+    opacity: 0.8;
+}
+.randomTrack:hover,.previousTrack:hover,.playPauseBtn:hover,.nextTrack:hover,.repeatTrack:hover{
+    opacity: 1;
+    transition: 0.2s;
+}
+
+.fa-random,.fa-step-backward,.fa-play-circle,.fa-step-forward,.fa-repeat {
+    cursor: pointer;
+} 
+
+
+.activateRandom{
+    color:#ffffff;
+}
